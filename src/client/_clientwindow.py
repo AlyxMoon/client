@@ -64,7 +64,7 @@ from games import GamesWidget
 from tutorials import TutorialsWidget
 from stats import StatsWidget
 from tourneys import TournamentsWidget
-from vault import MapVault
+from mapvault import MapVault
 from modvault import ModVault
 from replays import ReplaysWidget
 
@@ -636,7 +636,7 @@ class ClientWindow(FormClass, BaseClass):
         self.ladderTab.layout().addWidget(self.ladder)
         self.tourneyTab.layout().addWidget(self.tourneys)
         self.replaysTab.layout().addWidget(self.replays)
-        self.mapsTab.layout().addWidget(self.mapvault.ui)
+        self.mapsTab.layout().addWidget(self.mapvault)
         self.unitdbTab.layout().addWidget(self._unitdb.db_widget)
         self.modsTab.layout().addWidget(self.modvault)
 

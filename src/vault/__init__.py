@@ -67,6 +67,7 @@ class MapVault(QtCore.QObject, BusyWidget):
         query.addQueryItem('pwdhash', self.client.password)
         url.setQuery(query)
 
+        print(url)
         self.ui.setUrl(url)
 
     def __preparePositions(self, positions, map_size):
